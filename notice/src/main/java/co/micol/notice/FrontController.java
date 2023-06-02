@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import co.micol.notice.command.NoticeList;
 import co.micol.notice.common.Command;
 import co.micol.notice.main.command.MainCommand;
+import co.micol.notice.member.command.MemberList;
 
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
@@ -27,7 +28,8 @@ public class FrontController extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		// 처음 시작될때 동작하는 메소드, 요청한 것을 담아 두는 곳 (한번만 실행)
 		map.put("/main.do", new MainCommand()); //처음 들어오는 페이지를 돌려준다.
-		map.put("/noticeList.do", new NoticeList());
+		map.put("/noticeList.do", new NoticeList()); //게시글 목록보기
+		map.put("/memberList.do", new MemberList());  //멤버 목록 보기
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

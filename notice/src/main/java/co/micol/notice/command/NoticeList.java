@@ -23,5 +23,4 @@ public class NoticeList implements Command {
 		request.setAttribute("notices", notices); //JSP에 보내기 위해 결과 객체를 담는다. (notices라는 이름으로 notices라는 객체를 넣을거야)
 		return "notice/noticeList"; // 결과를 담아서 이 페이지에 보내달라
 	}
-
 }

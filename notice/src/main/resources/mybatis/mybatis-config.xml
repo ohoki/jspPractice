@@ -20,7 +20,8 @@
       </dataSource>
     </environment>
   </environments>
+  <!-- sql mapper를 등록하는 곳 -->
   <mappers>
-    <mapper resource="co/micol/notice/service/NoticeMapper.xml"/>
+  	<package name="co.micol.notice"/>
   </mappers>
 </configuration>
