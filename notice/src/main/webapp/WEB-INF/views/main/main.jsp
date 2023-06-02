@@ -9,6 +9,7 @@
 <body>
 	<div align="center">
 		<h1>Welcome to My home</h1>
+		<a href="noticeList.do">게시물 목록 보기</a>
 	</div>
 </body>
 </html>
