@@ -43,6 +43,11 @@
   
   <!-- compile 또는 build option 정의 -->
   <build>
+  	<resources>
+  		<resource>
+  			<directory>src/main/resources</directory>
+  		</resource>
+  	</resources>
   	<plugins>
 		<plugin>
 			<artifactId>maven-clean-plugin</artifactId>
