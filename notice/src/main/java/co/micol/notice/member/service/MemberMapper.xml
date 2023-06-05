@@ -8,7 +8,8 @@
 		SELECT * FROM member WHERE member_id = #{memberId}
 	</select>
 	<insert id="memberInsert">
-		
+		INSERT INTO MEMBER
+		VALUES(#{memberId}, #{memberPw}, #{memberName}, #{memberAge}, #{memberTel}, #{memberGender})
 	</insert>
 	<update id="memberUpdate">
 	
@@ -16,4 +17,8 @@
 	<delete id="memberDelete">
 	
 	</delete>
+	<select id="memberLogin">
+		SELECT * FROM MEMBER
+		WHERE MEMBER_ID = #{memberId} AND MEMBER_PW = #{memberPw}
+	</select>
 </mapper>

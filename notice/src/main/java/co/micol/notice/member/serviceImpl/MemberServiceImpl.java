@@ -38,4 +38,9 @@ public class MemberServiceImpl implements MemberService {
 		return map.memberDelete(vo);
 	}
 
+	@Override
+	public MemberVO memberLogin(MemberVO vo) {
+		return map.memberLogin(vo);
+	}
+
 }

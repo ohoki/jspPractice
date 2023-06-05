@@ -9,7 +9,8 @@
 <body>
 	<jsp:include page="../menu/menu.jsp"></jsp:include>
 	<div align="center">
-		<h1>Welcome to My home</h1>
+		<h1>${message}</h1>
+		<button type="button" onclick="location.href='memberList.do'">멤버 목록</button>
 	</div>
 </body>
 </html>

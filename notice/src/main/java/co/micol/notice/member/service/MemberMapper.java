@@ -8,6 +8,7 @@ public interface MemberMapper {
 	int memberInsert(MemberVO vo);
 	int memberUpdate(MemberVO vo);
 	int memberDelete(MemberVO vo);
+	MemberVO memberLogin(MemberVO vo);
 	
 	//충돌을 방지하기 위해 MemberService와 따로 만들어줌
 }
