@@ -11,5 +11,8 @@
 	<div align="center">
 		<h1>Welcome to My home</h1>
 	</div>
+	<div align="center">
+		<img alt="배경화면" src="img/이주빈 화보.jpg" width="600">
+	</div>
 </body>
 </html>

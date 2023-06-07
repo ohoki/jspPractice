@@ -35,7 +35,10 @@
 			</thead>
 			<tbody>
 				<c:forEach items="${notices}" var="n">
-					<tr>
+					<tr onmouseover = 'this.style.background="#9fff80";'
+						onmouseleave = 'this.style.background="#ffffff";'
+						onclick = noticeChoice(${n.noticeId});
+					>
 						<td>${n.noticeId}</td>
 						<td>${n.noticeWriter}</td>
 						<td>${n.noticeTitle}</td>
@@ -45,7 +48,23 @@
 				</c:forEach>
 			</tbody>
 		</table>
-		
+	</div><br>
+	<div align="center">
+		<c:if test="${not empty id }">
+			<button type="button" onclick="location.href='noticeInsertForm.do'">새 글 작성</button>
+		</c:if>
 	</div>
+	<div>
+		<form id="frm" action="noticeSelect.do" method="post">
+			<input type="hidden" id="noticeId" name="noticeId">
+		</form>
+	</div>
+	<script type="text/javascript">
+		function noticeChoice(id) {
+			let frm = document.getElementById("frm");
+			frm.noticeId.value = id;
+			frm.submit();
+		}
+	</script>
 </body>
 </html>

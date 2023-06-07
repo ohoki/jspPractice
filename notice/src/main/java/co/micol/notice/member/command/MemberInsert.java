@@ -1,4 +1,4 @@
-package co.micol.notice.main.command;
+package co.micol.notice.member.command;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
