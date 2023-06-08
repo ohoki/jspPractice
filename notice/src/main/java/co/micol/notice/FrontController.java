@@ -27,6 +27,9 @@ import co.micol.notice.member.command.MemberList;
 import co.micol.notice.member.command.MemberLogin;
 import co.micol.notice.member.command.MemberLoginForm;
 import co.micol.notice.member.command.MemberLogout;
+import co.micol.notice.product.command.ProductInsert;
+import co.micol.notice.product.command.ProductInsertForm;
+import co.micol.notice.product.command.ProductList;
 
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
@@ -54,6 +57,9 @@ public class FrontController extends HttpServlet {
 		map.put("/memberLoginForm.do", new MemberLoginForm());
 		map.put("/memberLogin.do", new MemberLogin());
 		map.put("/memberLogout.do", new MemberLogout());
+		map.put("/productList.do", new ProductList());
+		map.put("/productInsertForm.do", new ProductInsertForm());
+		map.put("/productInsert.do", new ProductInsert());
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
